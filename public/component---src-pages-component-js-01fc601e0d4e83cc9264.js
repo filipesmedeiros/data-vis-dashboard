@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{Salo:function(n,t,e){"use strict";e.r(t);var o=e("q1tI"),u=e.n(o);t.default=function(){return u.a.createElement("button",null,"lol")}}}]);
+//# sourceMappingURL=component---src-pages-component-js-01fc601e0d4e83cc9264.js.map

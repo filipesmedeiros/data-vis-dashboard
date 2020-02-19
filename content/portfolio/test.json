@@ -1,0 +1,7 @@
+{
+  "title": "some test entry",
+  "description": "blah blah even more blah",
+  "websiteUrl": "https://google.com/",
+  "thumbnailUrl": "/img/someImage.png",
+  "thumbnailAlt": "test alt"
+}
