@@ -1,5 +1,7 @@
 /* Some global CSS, but be very careful with this */
 
-a {
-    color: lime;
+body, html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }

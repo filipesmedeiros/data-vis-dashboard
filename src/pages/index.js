@@ -1,23 +1,36 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
-import ExampleComponent from '../components/ExampleComponent';
-import Navbar from '../components/Navbar';
+import BarGraph from '../graph/BarGraph';
 
-export default ({ data }) =>
-    <div>
-        The title of our website is { data.site.siteMetadata.title }!
-        <Navbar/>
-        Hello world!
-        <br/>
-        <ExampleComponent/>
-        <br/>
-        <Link to='./directory'>Take me to 'directory', please.</Link>
-        <br/>
-        <a href='https://google.com'>
-            But for external links I'm still the way to go.
-        </a>
-    </div>
+const StyledBarGraph = styled(BarGraph)`
+  width: 300px;
+  height: 300px;
+`;
+
+const StyledBarGraph2 = styled(BarGraph)`
+  width: 50vw;
+  height: 500px;
+`;
+
+export default ({ data }) =><>
+    <StyledBarGraph2
+        title={ 'Hello' }
+        yLabel={ 'Y Label' }
+        xLabel={ 'X Label' }
+        scale={{ begin: 0, step: 5, end: 100 }}
+        values={[90, 80, 30, 100, 20, 90]}
+        styling={{ gap: 5 }}
+    />
+
+    <StyledBarGraph
+        title={ 'Hello' }
+        yLabel={ 'Y Label' }
+        xLabel={ 'X Label' }
+        scale={{ begin: 0, step: 5, end: 100 }}
+        values={[90, 80, 30, 100, 20, 90]}
+    /> </>
 
 // There's also a way of coloring and auto completing this but it's too hard
 // This is GraphQL, after querying with this, you can use it in the component
