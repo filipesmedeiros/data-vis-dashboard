@@ -1,1 +1,1 @@
-## This is the repository for my personal portfolio website
+## This is the repository for a personal data visualitation project
