@@ -4,17 +4,17 @@ module.exports = exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
     const blogPostTemplate = path.resolve(`src/templates/test.js`);
     const result = await graphql(`
-    query {
-        allTech {
-            edges {
-                node {
-                    slug
-                    title
+        query {
+            allTech {
+                edges {
+                    node {
+                        slug
+                        title
+                    }
                 }
             }
         }
-    }
-  `);
+    `);
 
     console.log(result);
 
@@ -23,8 +23,8 @@ module.exports = exports.createPages = async ({ graphql, actions }) => {
             path: `${edge.node.slug}`,
             component: blogPostTemplate,
             context: {
-                title: edge.node.title,
-            },
-        })
-    })
+                title: edge.node.title
+            }
+        });
+    });
 };

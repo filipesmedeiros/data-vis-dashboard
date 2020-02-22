@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react';
-import { DEFAULT_BORDER_WIDTH, DEFAULT_COLOR, DEFAULT_FILL, DEFAULT_UNIT, NONE } from '../env';
+import { DEFAULT_BORDER_WIDTH, DEFAULT_COLOR, DEFAULT_FILL, DEFAULT_UNIT, NONE, Unit } from '../../env';
 
 export interface Styling {
     color?: string,
     fill?: boolean,
     borderWidth?: number,
     borderColor?: string,
-    unit?: string,
-    widthUnit?: string,
-    heightUnit?: string
+    unit?: Unit,
+    widthUnit?: Unit,
+    heightUnit?: Unit
 }
 
 export interface RectProps {

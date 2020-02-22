@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
-var env_1 = require("../env");
+var env_1 = require("../../env");
 exports.finalStyling = function (props) {
     var _a, _b, _c, _d, _e, _f, _g;
     var fill = ((_a = props.styling) === null || _a === void 0 ? void 0 : _a.fill) !== undefined ?

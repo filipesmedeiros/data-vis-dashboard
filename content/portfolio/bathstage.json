@@ -1,7 +1,7 @@
 {
-  "title": "bathstage music",
-  "description": "blah blah",
-  "websiteUrl": "https://bathstagemusic.com/",
-  "thumbnailUrl": "/img/someImage.png",
-  "thumbnailAlt": "bathstage website thumbnail"
+    "title": "bathstage music",
+    "description": "blah blah",
+    "websiteUrl": "https://bathstagemusic.com/",
+    "thumbnailUrl": "/img/someImage.png",
+    "thumbnailAlt": "bathstage website thumbnail"
 }
